@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Solución Jurídica | Asesoramiento Legal en CABA y GBA</title>
+    <meta name="description" content="Estudio Jurídico con 20 años de trayectoria. Soluciones legales claras, rápidas y confiables en Divorcios, Sucesiones, Penal y más.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Definición de colores y variables (MANTENIDOS IGUALES) */
+        :root {
+            --azul-corp: #0056A3; /* Azul primario */
+            --coral-corp: #E74C3C; /* Coral de acento */
+            --gris-fondo: #F9F9F9; /* Gris muy claro para secciones */
+            --fuente-titulo: 'Lora', serif;
+            --fuente-cuerpo: 'Inter', sans-serif;
+        }
+
+        /* Estilos Generales y Reset */
+        body { font-family: var(--fuente-cuerpo); color: #333; margin: 0; padding: 0; background-color: white; }
+        h1, h2, h3 { font-family: var(--fuente-titulo); color: var(--azul-corp); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Encabezado/Header */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid #eee; }
+        .logo-lemas { display: flex; align-items: center; }
+        .logo-lemas img { width: 240px;  height: auto; margin-right: 15px; }
+        .lema { font-size: 0.85rem; color: #666; margin-top: 5px; }
+        nav a, .cta-whatsapp { text-decoration: none; color: var(--azul-corp); margin-left: 20px; font-weight: 500; }
+        .cta-whatsapp { 
+    background-color: var(--coral-corp); 
+    color: white; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    white-space: nowrap; /* <-- AÑADE ESTO */
+}
+        .cta-whatsapp:hover { background-color: #c0392b; }
+
+        /* ... justo después de la regla de 'header' ... */
+
+        .nav-principal {
+    display: flex;
+    align-items: center;
+}
+        .nav-principal nav {
+    display: flex;
+}
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('assets/img/despacho_fondo.jpg') center center / cover; /* Reemplazar con imagen real */
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; }
+        .btn-principal { background-color: var(--coral-corp); color: white; padding: 12px 30px; text-decoration: none; border-radius: 50px; font-size: 1.1rem; font-weight: 700; display: inline-block; transition: transform 0.2s; }
+        .btn-principal:hover { transform: translateY(-2px); }
+
+        /* Estilos de Secciones */
+        .section { padding: 60px 0; }
+        .section h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+        .tarjetas-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; text-align: center; }
+        .tarjeta { background-color: white; padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: box-shadow 0.3s; text-decoration: none; color: #333; flex-basis: 280px;flex-grow: 1}
+        .tarjeta:hover { box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); }
+        .tarjeta .icon { font-size: 2.5rem; color: var(--azul-corp); margin-bottom: 15px; }
+        .tarjeta h3 { margin-top: 0; font-size: 1.2rem; }
+
+        /* Estilos de Bloques (Por Qué Elegirnos) */
+        .bloques-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; text-align: center; }
+        .bloque-ventaja { padding: 30px; border-radius: 8px; border: 1px solid #eee; }
+        .bloque-ventaja .icon { color: var(--coral-corp); font-size: 2rem; margin-bottom: 10px; display: block; }
+        
+        /* Footer */
+        footer { background-color: var(--azul-corp); color: white; padding: 30px 0; text-align: center; font-size: 0.9rem; }
+        footer img {
+            width: 160px; /* Tamaño ajustado para el logo blanco */
+            height: auto;
+            margin-bottom: 10px;
+        }.matrículas { margin-top: 10px; font-size: 0.8rem; opacity: 0.8; }
+        .formulario {
+            background-color: var(--gris-fondo);
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 40px auto;
+        }
+        .formulario input, .formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .formulario button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--coral-corp);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="container">
+    <div class="logo-lemas">
+        <img src="assets/img/logo_placeholder.png" alt="Logo Tu Solución Jurídica"> 
+        <div>
+            <strong>Tu Solución Jurídica</strong>
+            <p class="lema">Asesoramiento claro, ágil y confiable</p>
+        </div>
+    </div>
+
+    <div class="nav-principal">
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="#areas">Áreas de Práctica</a>
+            <a href="#nosotros">Sobre Nosotros</a>
+            <a href="mailto:info@tusolucionjuridica.com.ar">Contacto</a>
+        </nav>
+        <a href="https://wa.me/5491172393568" target="_blank" class="cta-whatsapp">Consultar por WhatsApp</a>
+    </div>
+</header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Soluciones Jurídicas Claras, Rápidas y Confiables</h1>
+                <p>Más de 20 años de trayectoria brindando asesoramiento legal integral y efectivo en CABA y GBA. Dejanos ayudarte a simplificar tu problema legal.</p>
+                <a href="https://wa.me/5491172393568" target="_blank" class="btn-principal">📞 Consultar ahora por WhatsApp</a>
+            </div>
+        </section>
+
+        <section class="section" id="areas" style="background-color: var(--gris-fondo);">
+            <div class="container">
+                <h2>Te Acompañamos en todos tus desafíos legales.</h2>
+                <div class="tarjetas-grid">
+                    <a href="/divorcios/" class="tarjeta">
+                        <span class="icon">💔</span>
+                        <h3>Divorcios y Familia</h3>
+                        <p>Trámites ágiles de divorcio, régimen de comunicación y alimentos.</p>
+                    </a>
+                    <a href="/sucesiones/" class="tarjeta">
+                        <span class="icon">🏡</span>
+                        <h3>Sucesiones</h3>
+                        <p>Regularizá la herencia sin demoras ni conflictos innecesarios.</p>
+                    </a>
+                    <a href="/alimentos/" class="tarjeta">
+                        <span class="icon">⚖️</span>
+                        <h3>Alimentos</h3>
+                        <p>Reclamo y acuerdo de cuota alimentaria para proteger a tus hijos.</p>
+                    </a>
+                    <a href="/danos/" class="tarjeta">
+                        <span class="icon">🚗</span>
+                        <h3>Daños y Perjuicios</h3>
+                        <p>Cobrá la indemnización que te corresponde por accidentes o incumplimientos.</p>
+                    </a>
+                    <a href="/penal/" class="tarjeta">
+                        <span class="icon">🛡️</span>
+                        <h3>Penal</h3>
+                        <p>Defensa penal responsable y urgente. Consulta inmediata.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Por qué Elegirnos: La Tranquilidad de estar bien asesorado.</h2>
+                <div class="bloques-grid">
+                    <div class="bloque-ventaja">
+                        <span class="icon">➕20</span>
+                        <h3>Trayectoria Comprobada</h3>
+                        <p>Dos décadas de experiencia garantizan solidez y conocimiento profundo en tu caso.</p>
+                    </div>
+                    <div class="bloque-ventaja">
+                        <span class="icon">⚡</span>
+                        <h3>Asesoramiento Ágil</h3>
+                        <p>Respuesta rápida y trato directo con abogados matriculados. Te simplificamos el proceso.</p>
+                    </div>
+                    <div class="bloque-ventaja">
+                        <span class="icon">🤝</span>
+                        <h3>Confianza Total</h3>
+                        <p>Manejamos tu caso con la confidencialidad, ética y claridad que mereces.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="nosotros" style="padding: 40px 0; background-color: var(--gris-fondo); text-align: center;">
+            <div class="container">
+                <h3 style="margin-top: 0; color: var(--coral-corp);">20 AÑOS DE TRAYECTORIA</h3>
+                <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem;">**Tu Solución Jurídica** es un estudio enfocado en brindar un servicio legal accesible que prioriza la rapidez y la confianza del cliente. Simplificamos los procesos para que obtengas la mejor solución con el menor estrés posible.</p>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: var(--coral-corp); color: white; text-align: center;">
+            <div class="container">
+                <h2>Comencemos a resolver tu caso hoy.</h2>
+                <p style="font-size: 1.1rem;">Recibí un primer diagnóstico legal en 24hs. Contactanos por WhatsApp o dejanos tu consulta.</p>
+                <a href="https://wa.me/5491172393568" target="_blank" class="btn-principal" style="background-color: white; color: var(--coral-corp);">📲 Chatear por WhatsApp</a>
+                <div class="formulario">
+                    <form>
+                        <input type="text" placeholder="Tu Nombre Completo" required>
+                        <input type="tel" placeholder="Tu WhatsApp (+54 9 11...)" required>
+                        <textarea placeholder="Breve descripción de tu consulta (opcional)"></textarea>
+                        <button type="submit">Solicitar Asesoramiento Inmediato</button>
+                    </form>
+                    <!-- Estilo del enlace mejorado para legibilidad -->
+                    <p style="margin-top: 15px; font-size: 1rem;"> <a href="https://wa.me/5491172393568" target="_blank" style="color: rgb(201, 243, 62); font-weight: bold; text-decoration: underline;"> O Chatea con un abogado ahora</a>.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <!-- Etiqueta <img> cerrada correctamente -->
+            <img src="assets/img/logo_placeholder.png" alt="Logo Blanco">
+            <p><strong>Tu Solución Jurídica</strong> | Asesoramiento claro, ágil y confiable</p>
+            <p>WhatsApp: +54 9 11 7239-3568 | Email: info@tusolucionjuridica.com.ar</p>
+            <p class="matrículas">T°114 F°672 CPACF | T° XIII F°77 CAM</p>
+            <p style="font-size: 0.75rem; margin-top: 15px;">© 2025. Todos los derechos reservados. tusolucionjuridica.com.ar</p>
+        </div>
+    </footer>
+</body>
+</html>

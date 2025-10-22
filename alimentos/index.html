@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos - Tu Solución Jurídica | Asesoramiento Legal Ágil</title>
+    <meta name="description" content="Asesoramiento rápido y efectivo para reclamos y acuerdos de alimentos en CABA y GBA. 20 años de experiencia.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --azul-corp: #0056A3;
+            --coral-corp: #E74C3C;
+            --gris-fondo: #F9F9F9;
+            --fuente-titulo: 'Lora', serif;
+            --fuente-cuerpo: 'Inter', sans-serif;
+        }
+        body {
+            font-family: var(--fuente-cuerpo);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        h1, h2, h3 {
+            font-family: var(--fuente-titulo);
+            color: var(--azul-corp);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .logo-lemas {
+            display: flex;
+            align-items: center;
+        }
+        /* Tamaño del logo del header */
+        .logo-lemas img {
+            width: 240px; 
+            height: auto; /* Asegura que la proporción se mantenga */
+            margin-right: 15px;
+        }
+        .lema {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        nav a, .cta-whatsapp {
+            text-decoration: none;
+            color: var(--azul-corp);
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        .cta-whatsapp {
+            background-color: var(--coral-corp);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-whatsapp:hover {
+            background-color: #c0392b;
+        }
+        .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../assets/img/familia_fondo.jpg') center center / cover;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .btn-principal {
+            background-color: var(--coral-corp);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .btn-principal:hover {
+            transform: translateY(-2px);
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+        .bloques-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        .bloque {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .bloque h3 {
+            font-size: 1.2rem;
+            color: var(--coral-corp);
+        }
+        .icon {
+            font-size: 3rem;
+            color: var(--azul-corp);
+            margin-bottom: 15px;
+            display: block;
+        }
+        footer {
+            background-color: var(--azul-corp);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        /* Regla específica para el logo del footer */
+        footer img {
+            width: 160px; /* Tamaño ajustado para el logo blanco */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .matrículas {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        .formulario {
+            background-color: var(--gris-fondo);
+            padding: 40px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 40px auto;
+        }
+        .formulario input, .formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .formulario button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--coral-corp);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="container">
+        <div class="logo-lemas">
+            <img src="../assets/img/logo_placeholder.png" alt="Logo Tu Solución Jurídica"> 
+            <div>
+                <strong>Tu Solución Jurídica</strong>
+                <p class="lema">Asesoramiento claro, ágil y confiable</p>
+            </div>
+        </div>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="#areas">Áreas</a>
+            <a href="https://wa.me/5491172393568" target="_blank" class="cta-whatsapp">Consultar por WhatsApp</a>
+        </nav>
+    </header>
+
+    <main>
+       <section class="hero">
+            <div class="container">
+                <h1>Reclamos y Acuerdos de Alimentos</h1>
+                <p>Asesoramiento rápido, sensible y efectivo para proteger los derechos de tus hijos y garantizar su bienestar económico. **20 años de experiencia en Derecho de Familia.**</p>
+                <a href="https://wa.me/5491172393568" target="_blank" class="btn-principal">💬 Consultar por WhatsApp ahora</a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2>¿Cómo iniciamos tu consulta de alimentos?</h2>
+                <div class="bloques-grid">
+                    <div class="bloque">
+                        <span class="icon">1️⃣</span>
+                        <h3>Contanos tu Caso</h3>
+                        <p>Una consulta simple y confidencial por WhatsApp o mail. Recibí una primera orientación legal.</p>
+                    </div>
+                    <div class="bloque">
+                        <span class="icon">2️⃣</span>
+                        <h3>Evaluación Legal</h3>
+                        <p>Analizamos la situación familiar y las posibilidades de acuerdo o reclamo judicial formal.</p>
+                    </div>
+                    <div class="bloque">
+                        <span class="icon">3️⃣</span>
+                        <h3>Te Guiamos</h3>
+                        <p>Te acompañamos en todo el proceso para obtener la solución más justa y rápida. Sin vueltas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" style="background-color: var(--gris-fondo);">
+            <div class="container">
+                <h2>Tu Familia, Nuestra Prioridad.</h2>
+                <div class="bloques-grid">
+                    <div class="bloque">
+                        <span class="icon" style="color: var(--coral-corp);">✔️</span>
+                        <h3>Experiencia Comprobada</h3>
+                        <p>Más de 20 años de trayectoria enfocados en soluciones efectivas y humanas en Derecho de Familia.</p>
+                    </div>
+                    <div class="bloque">
+                        <span class="icon" style="color: var(--coral-corp);">🔒</span>
+                        <h3>Confianza y Discreción</h3>
+                        <p>Manejamos tu caso con la sensibilidad y la confidencialidad que merece tu situación familiar.</p>
+                    </div>
+                    <div class="bloque">
+                        <span class="icon" style="color: var(--coral-corp);">⚡</span>
+                        <h3>Respuesta Ágil</h3>
+                        <p>Te aseguramos respuestas rápidas y un plan de acción definido para no demorar la solución.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2>Preguntas Frecuentes sobre Alimentos</h2>
+                <div class="bloques-grid" style="grid-template-columns: 1fr;">
+                    <div class="bloque" style="text-align: left;">
+                        <h3>¿Qué incluye la cuota alimentaria?</h3>
+                        <p>No es solo comida. Incluye vestimenta, educación, salud, vivienda y recreación. Se ajusta según la necesidad del menor y la capacidad económica del obligado.</p>
+                    </div>
+                    <div class="bloque" style="text-align: left;">
+                        <h3>¿Puedo reclamar si no estamos casados?</h3>
+                        <p>Sí, la obligación de alimentos es de ambos progenitores hacia sus hijos, independientemente del vínculo matrimonial. Es un derecho del menor.</p>
+                    </div>
+                    <div class="bloque" style="text-align: left;">
+                        <h3>¿Cuánto tiempo demora en resolverse?</h3>
+                        <p>Depende. Si se logra un acuerdo extrajudicial con mediación, es muy rápido. Si requiere un proceso judicial, los tiempos son mayores, pero siempre actuamos con la mayor celeridad posible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" style="background-color: var(--coral-corp); color: white;">
+            <div class="container" style="text-align: center;">
+                <h2>No demores más la tranquilidad de tus hijos.</h2>
+                <p style="font-size: 1.1rem;">Inicia tu consulta de forma *clara, ágil y confiable*. Dejanos tu contacto para una respuesta inmediata o escribinos por WhatsApp.</p>
+                <div class="formulario">
+                    <form>
+                        <input type="text" placeholder="Tu Nombre Completo" required>
+                        <input type="tel" placeholder="Tu WhatsApp (+54 9 11...)" required>
+                        <textarea placeholder="Breve descripción de tu consulta (opcional)"></textarea>
+                        <button type="submit">Solicitar Asesoramiento Inmediato</button>
+                    </form>
+                    <!-- Estilo del enlace mejorado para legibilidad -->
+                    <p style="margin-top: 15px; font-size: 1rem;"> <a href="https://wa.me/5491172393568" target="_blank" style="color: rgb(201, 243, 62); font-weight: bold; text-decoration: underline;">O Chatea con un abogado ahora</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer>
+        <div class="container">
+            <!-- Etiqueta <img> cerrada correctamente -->
+            <img src="../assets/img/logo_placeholder.png" alt="Logo Blanco">
+            <p><strong>Tu Solución Jurídica</strong> | Asesoramiento claro, ágil y confiable</p>
+            <p>WhatsApp: +54 9 11 7239-3568 | Email: info@tusolucionjuridica.com.ar</p>
+            <p class="matrículas">T°114 F°672 CPACF | T° XIII F°77 CAM</p>
+            <p style="font-size: 0.75rem; margin-top: 15px;">© 2025. Todos los derechos reservados. tusolucionjuridica.com.ar</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
